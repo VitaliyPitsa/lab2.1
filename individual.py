@@ -1,8 +1,6 @@
-import math
-print("введите основания трапеции")
-osn1=int(input())
-osn2=int(input())
-print("введите угол при большем основании трапеции")
-ugol=float(input())
-S =1/2*(osn1**2+osn2**2)*((math.sin(ugol)*math.sin(ugol))/(math.sin(2*ugol)))
-print(S)
+import random
+
+a = int(input('a = '))
+b = int(input('b = '))
+
+print((a % b and not (b % a) and 1) or (b % a and not (a % b) and 1) or random.randint(0, 10))
